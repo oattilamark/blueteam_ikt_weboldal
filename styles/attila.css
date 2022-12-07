@@ -1,0 +1,183 @@
+/* Ez a css csak Attila főoldalához van használva. */
+
+* {
+    background-color: black;
+    color: white;
+    text-align: center;
+    place-items: center;
+}
+
+.tr {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+    transition: 2s ease-in-out all;
+}
+
+.tr:hover {
+    transition: 2s ease-in-out all;
+}
+
+.tr::before  {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent, #00e1ff);
+    animation: rotate 4s linear infinite;
+    transition: 2s ease-in-out all;
+}
+
+.tr:hover::before {
+    background-image: conic-gradient(transparent, #263d4d, #7d4b19, #0e5083, #ea8302, #671d02, #c33202, #827c47);
+    animation: rotate 2s linear infinite;
+    transition: 2s ease-in-out all;
+}
+
+.tr::after  {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent, #a600ff);
+    animation: rotate 4s linear infinite;
+    animation-delay: -2s;
+    transition: 2s ease-in-out all;
+}
+
+.tr:hover::after {
+    background-image: conic-gradient(transparent, #263d4d, #7d4b19, #0e5083, #ea8302, #671d02, #c33202, #827c47);
+    animation: rotate 2s linear infinite;
+    animation-delay: -1s;
+    transition: 2s ease-in-out all;
+}
+
+.tr span {
+    position: absolute;
+    inset: 5px;
+    border-radius: 16px;
+    background-color: #000000;
+    z-index: 2;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.pfimg {
+    display: block;
+    width: 290px;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+body {
+    transition: 1s ease-in-out all;
+}
+
+.button {
+    background-color: #ff4400;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5%;
+  }
+
+.neu {
+    width: 1.35%;
+    margin-right: 0.5%;
+}
+.neutext {
+font-size: 25px;   
+}
+
+h4 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.work>img {
+    width: 15%;
+    border-radius: 7.5%;
+}
+
+/*Loader*/
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid black;
+    border-radius: 50%;
+    border-top: 16px solid #ff4400;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: 100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: 100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}

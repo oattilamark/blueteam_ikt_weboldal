@@ -4,23 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lamborghini Aventador LP 780-4 ULTIMAE</title>
+    <title>Oláh Attila Márk</title>
+    <link rel="stylesheet" href="./styles/attila.css">
+    <link rel="shortcut icon" href="./img/Attila.png" type="image/x-icon">
+    <!-- Embed Data -->
+        <meta name="keywords" content="Oláh Attila Márk">
+        <meta property="og:title" content="Oláh Attila Márk">
+        <meta name="og:site_name" value="Oláh Attila Márk">
+        <meta name="theme-color" content="#ff4400">
+        <meta name="msapplication-navbutton-color" content="#ff4400">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ff4400">
 </head>
-<body>
-    <h1>Lamborghini Aventador LP 780-4 ULTIMAE</h1>
-    <p>The latest version of Aventador is not only powerful, it is the most powerful Aventador ever made. With the highest-performing standard-production naturally aspirated V12 engine in Lamborghini history, it incorporates advanced technological solutions and unparalleled design. This gem, to be produced in only 350 units, is the final—and greatest—expression of a family of super sports cars that has left its mark on the last decade. Aventador LP 780-4 Ultimae is already a classic transformed into an icon.</p>
-    <img src="./img/Lamborghini_Aventador_LP_780-4_ultimae.png" alt="Lamborghini Aventador LP 780-4 ULTIMAE">
-    
-    <h2>TECHNICAL SPECIFICATIONS</h2>
-    <ul>
-        <li>DISPLACEMENT    6,498 cm3 (396.5 cu in)</li>
-        <li>MAX. POWER  780 CV (574 kW) at 8,500 rpm</li>
-        <li>TOP SPEED   355 km/h</li>
-        <li>ACCELERATION 0-100 KM/H (MPH 0-62)  2.8 s</li>
-        <li>TRANSMISSION TYPE   Electronically controlled all-wheel drive system (Haldex gen. IV) with rear mechanical self-locking differential</li>
-        <li>COMBINED CONSUMPTION *  18.0 l/100km (WLTP)</li>
-        <li>COMBINED CO2 EMISSIONS *    442 g/km (WLTP)</li>
-    </ul>
+<!-- Loader -->
+<body onload="Loader()" style="margin:0;">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+    <div class="main">
+        <h1>Üdvözöllek!</h1>
+        <div class="tr">
+            <span><img class="pfimg" src="./img/Attila.png" alt="Attila képe"></span>
 
+        </div>
+        <h4>20 éves vagyok, Budapesten a XVI. kerületben élek. Érdeklődési köreim közé tartozik a zene, a fotózás, a képszerkesztés, a videó készítés és szerkesztés, utómunka illetve a hangtechnika. 12 éve játszok trombitán, viszont az utóbbi időben az informatikára fektetek nagyobb hangsúlyt. Céljaim közé tartozik egy remek elhelyezkedési lehetőség egy olyan munkakörben, ahol képes vagyok a maximumot nyújtani, illetve egy cég létrehozása, fenntartása és üzemeltetése.</h4>
+
+        <p><b><a href="http://www.njszki.hu"><img class="neu" src="https://cms.budapesti.mu.szc.edir.hu/uploads/neumann_logo_199959a8b5.png" alt="BMSZC Neumann János Informatikai Technikum icon"></a> <span class="neutext"> A BMSZC Neumann János Informatikai Technikum 13. osztályos esti tagozatos hallgatója.</span></b></p>
+        <br>
+        <h1>Munkáim:</h1>
+        <div class="work">
+            <img class="card-img-top" src="./img/Lamborghini_Aventador_LP_780-4_ultimae.png" alt="Lamborghini Aventador LP 780-4 ULTIMAE">
+            <h5>Lamborghini Aventador LP 780-4 ULTIMAE</h5>
+            <a href="./aventador.html"><button class="button">▶ Tovább az oldalra</button></a>
+            </div>
+          </div>
+        </div>
+        <br>
+<!-- Loader -->
+<script>
+    var myVar;
+
+    function Loader() {
+        myVar = setTimeout(showPage, 1250);
+    }
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+    }
+</script>
 </body>
 </html>
