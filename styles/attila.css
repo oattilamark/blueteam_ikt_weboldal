@@ -7,6 +7,10 @@
     place-items: center;
 }
 
+a {
+    cursor: default;
+}
+
 .tr {
     position: relative;
     width: 300px;
@@ -65,6 +69,45 @@
     z-index: 2;
 }
 
+.la {
+    position: relative;
+    width: 300px;
+    height: 173px;
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.la::before  {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-image: conic-gradient(#6e9fbf, #0366f5, #1b1e25, #0c218b, #dfe8f0);
+    animation: rotate 3s linear infinite;
+    animation-delay: 1s;
+}
+
+.la::after  {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-image: conic-gradient(#6e9fbf, #0366f5, #1b1e25, #0c218b, #dfe8f0);
+    animation: rotate 3s linear infinite;
+    animation-delay: -1s;
+}
+
+.la span {
+    position: absolute;
+    inset: 5px;
+    border-radius: 16px;
+    background-color: #000000;
+    z-index: 2;
+}
+
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -86,7 +129,7 @@ body {
 }
 
 .button {
-    background-color: #ff4400;
+    background-color: #0366f5;
     border: none;
     color: white;
     padding: 15px;
@@ -95,8 +138,8 @@ body {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5%;
+    cursor: default;
+    border-radius: 7%;
   }
 
 .neu {
@@ -112,9 +155,9 @@ h4 {
     margin-right: 5%;
 }
 
-.work>img {
-    width: 15%;
-    border-radius: 7.5%;
+#laimg {
+    width: 290px;
+    border-radius: 5.5%;
 }
 
 /*Loader*/
