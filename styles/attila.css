@@ -128,6 +128,26 @@ body {
     transition: 1s ease-in-out all;
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+  }
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #00e1ff 0%, #a600ff 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(180deg, #c33202 0%, #ea8302 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
+  }
+
 .button {
     background-color: #0366f5;
     border: none;
