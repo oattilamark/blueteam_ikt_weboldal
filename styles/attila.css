@@ -162,6 +162,20 @@ body {
     border-radius: 7%;
   }
 
+  .button2 {
+    background-color: #ea8302;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: default;
+    border-radius: 7%;
+  }
+
 .neu {
     width: 1.35%;
     margin-right: 0.5%;
