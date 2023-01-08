@@ -1,14 +1,52 @@
-* {
+body {
     background-color: gray;
-    color: white;
+    color: maroon;
     text-align: center;
+}
+img
+{
+    border: 15px ridge gray;
+    background-color: black;
 }
 
 a {
     cursor: default;
+    color: orangered;
 }
-
+ul
+{
+    background-color: blue;
+    margin-right: auto 30%;
+    border: 10px double firebrick;
+    margin-left: 30%;
+    margin-right: 30%;
+}
 li{
+    background-color: purple;
+    color: silver;
+    text-transform: capitalize;
+    list-style-type: none;
+}
+p
+{
+    margin-left: 30%;
+    margin-right: 30%;
+    color: brown;
+}
+h1
+{
     background-color: black;
-    margin: 3%
+    color: gold;
+    border: 5px ridge goldenrod;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+h2,h4
+{
+
+}
+#big
+{
+    width: 15%;
+    height: 15%;
 }
