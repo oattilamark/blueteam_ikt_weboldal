@@ -4,3 +4,14 @@
     float: right;
     padding-right: 3%;
 }
+
+body
+{
+    background-color: gray;
+    color: white;
+}
+
+li
+{
+    list-style: none;
+}
