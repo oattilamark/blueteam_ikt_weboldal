@@ -1,68 +1,20 @@
 * {
-    background-color: black;
+    background-color: gray;
     color: white;
     text-align: center;
-    place-items: center;
 }
 
 a {
     cursor: default;
 }
 
-.tr {
+tr{
     position: relative;
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20;
     display: grid;
     place-items: center;
     overflow: hidden;
-    margin: 0 auto;
-    transition: 2s ease-in-out all;
-}
-
-.tr:hover {
-    transition: 2s ease-in-out all;
-}
-
-.tr::before  {
-    content: '';
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    background-image: conic-gradient(transparent, transparent, transparent, #00e1ff);
-    animation: rotate 4s linear infinite;
-    transition: 2s ease-in-out all;
-}
-
-.tr:hover::before {
-    background-image: conic-gradient(transparent, #263d4d, #7d4b19, #0e5083, #ea8302, #671d02, #c33202, #827c47);
-    animation: rotate 2s linear infinite;
-    transition: 2s ease-in-out all;
-}
-
-.tr::after  {
-    content: '';
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    background-image: conic-gradient(transparent, transparent, transparent, #a600ff);
-    animation: rotate 4s linear infinite;
-    animation-delay: -2s;
-    transition: 2s ease-in-out all;
-}
-
-.tr:hover::after {
-    background-image: conic-gradient(transparent, #263d4d, #7d4b19, #0e5083, #ea8302, #671d02, #c33202, #827c47);
-    animation: rotate 2s linear infinite;
-    animation-delay: -1s;
-    transition: 2s ease-in-out all;
-}
-
-.tr span {
-    position: absolute;
-    inset: 5px;
-    border-radius: 16px;
-    background-color: #000000;
-    z-index: 2;
+    margin: auto;
 }
